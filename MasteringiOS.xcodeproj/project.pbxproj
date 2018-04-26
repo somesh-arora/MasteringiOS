@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61270572712FCA508A7DD546 /* Pods_MasteringiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9DA74B4FD3FC949B776931 /* Pods_MasteringiOS.framework */; };
 		CEBAC40D208EA631005189CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC40C208EA631005189CE /* AppDelegate.swift */; };
 		CEBAC40F208EA631005189CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC40E208EA631005189CE /* ViewController.swift */; };
 		CEBAC412208EA631005189CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC410208EA631005189CE /* Main.storyboard */; };
 		CEBAC414208EA633005189CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC413208EA633005189CE /* Assets.xcassets */; };
 		CEBAC417208EA633005189CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC415208EA633005189CE /* LaunchScreen.storyboard */; };
+		CEBAC421208ED39A005189CE /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC420208ED39A005189CE /* ChartsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A9DA74B4FD3FC949B776931 /* Pods_MasteringiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasteringiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8778ED229D8E1FE4249DA88A /* Pods-MasteringiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteringiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS.release.xcconfig"; sourceTree = "<group>"; };
+		B2184B4014A0031826FB2A30 /* Pods-MasteringiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteringiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CEBAC409208EA631005189CE /* MasteringiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC40C208EA631005189CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBAC40E208EA631005189CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		CEBAC413208EA633005189CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBAC416208EA633005189CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBAC418208EA633005189CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBAC420208ED39A005189CE /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61270572712FCA508A7DD546 /* Pods_MasteringiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DDF17A6CB7D50B779248BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DA74B4FD3FC949B776931 /* Pods_MasteringiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C639483E7E05C591FC34FFB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2184B4014A0031826FB2A30 /* Pods-MasteringiOS.debug.xcconfig */,
+				8778ED229D8E1FE4249DA88A /* Pods-MasteringiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEBAC400208EA630005189CE = {
 			isa = PBXGroup;
 			children = (
 				CEBAC40B208EA631005189CE /* MasteringiOS */,
 				CEBAC40A208EA631005189CE /* Products */,
+				C639483E7E05C591FC34FFB4 /* Pods */,
+				6DDF17A6CB7D50B779248BD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				CEBAC40C208EA631005189CE /* AppDelegate.swift */,
 				CEBAC40E208EA631005189CE /* ViewController.swift */,
+				CEBAC420208ED39A005189CE /* ChartsViewController.swift */,
 				CEBAC410208EA631005189CE /* Main.storyboard */,
 				CEBAC413208EA633005189CE /* Assets.xcassets */,
 				CEBAC415208EA633005189CE /* LaunchScreen.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBAC41B208EA633005189CE /* Build configuration list for PBXNativeTarget "MasteringiOS" */;
 			buildPhases = (
+				C477F16BAB915C919A7FA068 /* [CP] Check Pods Manifest.lock */,
 				CEBAC405208EA631005189CE /* Sources */,
 				CEBAC406208EA631005189CE /* Frameworks */,
 				CEBAC407208EA631005189CE /* Resources */,
+				C748F1C13307B66987F11042 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C477F16BAB915C919A7FA068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MasteringiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C748F1C13307B66987F11042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEBAC405208EA631005189CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC421208ED39A005189CE /* ChartsViewController.swift in Sources */,
 				CEBAC40F208EA631005189CE /* ViewController.swift in Sources */,
 				CEBAC40D208EA631005189CE /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +347,7 @@
 		};
 		CEBAC41C208EA633005189CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2184B4014A0031826FB2A30 /* Pods-MasteringiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		CEBAC41D208EA633005189CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8778ED229D8E1FE4249DA88A /* Pods-MasteringiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
