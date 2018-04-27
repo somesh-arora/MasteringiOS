@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		61270572712FCA508A7DD546 /* Pods_MasteringiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9DA74B4FD3FC949B776931 /* Pods_MasteringiOS.framework */; };
+		CE677FC720929C96001DFC41 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE677FC620929C96001DFC41 /* QuizViewController.swift */; };
+		CE677FC92092B2FB001DFC41 /* UIButtonAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE677FC82092B2FB001DFC41 /* UIButtonAnimations.swift */; };
 		CEBAC40D208EA631005189CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC40C208EA631005189CE /* AppDelegate.swift */; };
 		CEBAC40F208EA631005189CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC40E208EA631005189CE /* ViewController.swift */; };
 		CEBAC412208EA631005189CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC410208EA631005189CE /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		4A9DA74B4FD3FC949B776931 /* Pods_MasteringiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasteringiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8778ED229D8E1FE4249DA88A /* Pods-MasteringiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteringiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS.release.xcconfig"; sourceTree = "<group>"; };
 		B2184B4014A0031826FB2A30 /* Pods-MasteringiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasteringiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasteringiOS/Pods-MasteringiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CE677FC620929C96001DFC41 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CE677FC82092B2FB001DFC41 /* UIButtonAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonAnimations.swift; sourceTree = "<group>"; };
 		CEBAC409208EA631005189CE /* MasteringiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC40C208EA631005189CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBAC40E208EA631005189CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				CEBAC40C208EA631005189CE /* AppDelegate.swift */,
 				CEBAC40E208EA631005189CE /* ViewController.swift */,
 				CEBAC420208ED39A005189CE /* ChartsViewController.swift */,
+				CE677FC620929C96001DFC41 /* QuizViewController.swift */,
+				CE677FC82092B2FB001DFC41 /* UIButtonAnimations.swift */,
 				CEBAC410208EA631005189CE /* Main.storyboard */,
 				CEBAC413208EA633005189CE /* Assets.xcassets */,
 				CEBAC415208EA633005189CE /* LaunchScreen.storyboard */,
@@ -204,8 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBAC421208ED39A005189CE /* ChartsViewController.swift in Sources */,
+				CE677FC92092B2FB001DFC41 /* UIButtonAnimations.swift in Sources */,
 				CEBAC40F208EA631005189CE /* ViewController.swift in Sources */,
 				CEBAC40D208EA631005189CE /* AppDelegate.swift in Sources */,
+				CE677FC720929C96001DFC41 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
