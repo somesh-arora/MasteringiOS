@@ -17,24 +17,35 @@ class QuizViewController: UIViewController
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
-    
-    let questions = ["Which file specifies the layout of your screen?",
+   
+    var questions = [
+                     "What is the meaning of iOS?",
+                     "Which file specifies the layout of your screen?",
                      "What is the application's current state when the application is in background and not executing any code?",
                      "What is the application's current state when the application is in background and executing background tasks?",
                      "Which feature of iPhone is activated when user rotates device from portrait to landscape mode?",
                      "Which of the following is NOT a state in the cycle of a service?",
                      "When an activity does not exist in the memory, it is in?",
-                     "What is the application's current state when the application has not been launched or was running but terminated by the device?"]
+                     "What is the application's current state when the application has not been launched or was running but terminated by the device?",
+                     "Which of the following framework is not used in iOS?",
+                     "Which of the following is a default UI property?"
+                    ]
     
     let answers = [
+                    ["iPhone Operating System","Internetwork Operating System", "Internet Operating System"],
                     ["Layout File", "Manifest File", "String XML"],
                     ["Suspended State","Background State","Inactive State"],
                     ["Background State", "Inactive State", "Suspended State"],
                     ["Accelerometer", "Rotator", "Shadow Detector"],
                     ["Paused", "Destroyed", "Starting"],
                     ["Starting State", "Inexistent State", "Loading State"],
-                    ["Not Running State", "Inactive State", "Suspended State"]
+                    ["Not Running State", "Inactive State", "Suspended State"],
+                    ["AppKit", "UIKit", "CoreMotion"],
+                    ["Atomic", "assign", "non-atomic"]
                   ]
+    var questionDict = Dictionary<String,Array<String>>()
+    var answersDict = Dictionary<String, Array<Array<String>>>()
+    
     
     var currentQuestion = 0
     var rightAnswerPlacement: UInt32 = 0
@@ -43,6 +54,13 @@ class QuizViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+//        questionDict["module1"] = questions
+//        answersDict["module1"] = answers
+//        let a = questionDict["module1"]
+//        let b = answersDict["module1"]
+//        print(b![1])
+       
+        
         nextButton.isHidden = true
 
     }
@@ -160,14 +178,6 @@ class QuizViewController: UIViewController
             newQuestion()
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 
