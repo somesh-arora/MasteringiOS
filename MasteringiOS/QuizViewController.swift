@@ -47,7 +47,8 @@ class QuizViewController: UIViewController
     var questionDict = Dictionary<String,Array<String>>()
     var answersDict = Dictionary<String, Array<Array<String>>>()
     
-    
+    var rightAnswer = 0
+    var wrongAnswer = 0
     var currentQuestion = 0
     var rightAnswerPlacement: UInt32 = 0
     
@@ -60,10 +61,10 @@ class QuizViewController: UIViewController
         print(questionDict.keys)
         
         answersDict["module1"] = answers
-        let a = questionDict["module1"]
-        let b = answersDict["module1"]
-        print(b![0])
-        print(a![0])
+        //let a = questionDict["module1"]
+        //let b = answersDict["module1"]
+        //print(b![0])
+        //print(a![0])
        
         
         nextButton.isHidden = true
@@ -77,12 +78,10 @@ class QuizViewController: UIViewController
     
     func newQuestion()
     {
-        
         progressView.setProgress(Float(currentQuestion+1) / Float(questions.count), animated: true)
         if(currentQuestion+1 == questions.count)
         {
             nextButton.setTitle("Finish", for: .normal)
-            
         }
         
         option1Button.isEnabled = true
@@ -130,6 +129,7 @@ class QuizViewController: UIViewController
         
         if(sender.tag == Int(rightAnswerPlacement))
         {
+            rightAnswer = rightAnswer + 1
             nextButton.backgroundColor = #colorLiteral(red: 0.2249624133, green: 0.7392098308, blue: 0.343357861, alpha: 1)
             for i in 1...3
             {
@@ -152,6 +152,7 @@ class QuizViewController: UIViewController
         }
         else
         {
+            wrongAnswer = wrongAnswer + 1
             nextButton.backgroundColor = #colorLiteral(red: 0.8470588235, green: 0.2745098039, blue: 0.1490196078, alpha: 1)
             for i in 1...3
             {
@@ -184,6 +185,14 @@ class QuizViewController: UIViewController
         if(currentQuestion != questions.count)
         {
             newQuestion()
+        }
+        if(rightAnswer + wrongAnswer == 10 && nextButton.currentTitle == "Finish")
+        {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let myVC = storyboard.instantiateViewController(withIdentifier: "ChartsViewController") as! ChartsViewController
+            myVC.passedRightAnswerValue = rightAnswer
+            myVC.passedWrongAnswervalue = wrongAnswer
+            self.present(myVC, animated: true, completion: nil)
         }
     }
     

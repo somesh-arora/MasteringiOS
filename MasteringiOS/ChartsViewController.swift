@@ -16,6 +16,8 @@ class ChartsViewController: UIViewController
 
     @IBOutlet weak var PieChart: PieChartView!
     
+    var passedRightAnswerValue = 0
+    var passedWrongAnswervalue = 0
     var rightAnswer = PieChartDataEntry(value: 0)
     var wrongAnswer = PieChartDataEntry(value: 0)
     
@@ -23,12 +25,12 @@ class ChartsViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        print(passedRightAnswerValue, passedWrongAnswervalue)
         PieChart.chartDescription?.textColor = UIColor(white: 1, alpha: 1)
-        rightAnswer.value = 7
+        rightAnswer.value = Double(passedRightAnswerValue)
         rightAnswer.label = "Correct"
         
-        wrongAnswer.value = 3
+        wrongAnswer.value = Double(passedWrongAnswervalue)
         wrongAnswer.label = "Wrong"
         
         PieChart.holeColor = UIColor(white: 1, alpha: 0.0)

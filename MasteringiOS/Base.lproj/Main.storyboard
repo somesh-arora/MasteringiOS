@@ -121,10 +121,10 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-1M-bC8">
-                                            <rect key="frame" x="20" y="311" width="335" height="80"/>
+                                            <rect key="frame" x="20" y="191" width="335" height="200"/>
                                             <color key="backgroundColor" name="Gotcha"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="80" id="PBa-9U-iTU"/>
+                                                <constraint firstAttribute="height" constant="200" id="PBa-9U-iTU"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <state key="normal" title="Learning">
@@ -138,10 +138,10 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-vr-Eaw">
-                                            <rect key="frame" x="20" y="421" width="335" height="80"/>
+                                            <rect key="frame" x="20" y="421" width="335" height="200"/>
                                             <color key="backgroundColor" red="0.38823529411764707" green="0.72941176470588232" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="80" id="WLA-AX-QLU"/>
+                                                <constraint firstAttribute="height" constant="200" id="WLA-AX-QLU"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <state key="normal" title="Quiz">
@@ -156,7 +156,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="XSS-1M-bC8" firstAttribute="top" secondItem="cfU-Wk-hhZ" secondAttribute="top" constant="311" id="CVJ-Wz-mS6"/>
+                                        <constraint firstItem="XSS-1M-bC8" firstAttribute="top" secondItem="cfU-Wk-hhZ" secondAttribute="top" constant="191" id="CVJ-Wz-mS6"/>
                                         <constraint firstAttribute="trailing" secondItem="dnN-vr-Eaw" secondAttribute="trailing" constant="20" id="GWe-Hc-Gbw"/>
                                         <constraint firstItem="XSS-1M-bC8" firstAttribute="leading" secondItem="cfU-Wk-hhZ" secondAttribute="leading" constant="20" id="HNM-Ee-bFI"/>
                                         <constraint firstItem="XSS-1M-bC8" firstAttribute="centerX" secondItem="cfU-Wk-hhZ" secondAttribute="centerX" id="U4w-CK-dkj"/>
@@ -208,23 +208,31 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oc-jU-Ae3">
-                                            <rect key="frame" x="8" y="128" width="179" height="183"/>
+                                            <rect key="frame" x="5" y="130" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Module 1">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="module1:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="nFn-Cd-ig3"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-50-hEc">
-                                            <rect key="frame" x="195" y="128" width="172" height="183"/>
+                                            <rect key="frame" x="190" y="130" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Module 2">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="module2:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="pqT-JH-X88"/>
                                             </connections>
@@ -240,23 +248,31 @@
                                             </items>
                                         </navigationBar>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O19-UU-gDd">
-                                            <rect key="frame" x="8" y="319" width="179" height="183"/>
+                                            <rect key="frame" x="5" y="320" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Module 3">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="module3:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="wWi-6b-Od9"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5av-yW-6p4">
-                                            <rect key="frame" x="196" y="319" width="171" height="183"/>
+                                            <rect key="frame" x="190" y="320" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <state key="normal" title="Module 4">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="module4:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="NWA-ov-sxD"/>
                                             </connections>
@@ -273,12 +289,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6S-0j-WaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="894.82758620689663"/>
+            <point key="canvasLocation" x="3330" y="132"/>
         </scene>
         <!--Charts View Controller-->
         <scene sceneID="wff-qE-uKd">
             <objects>
-                <viewController id="adb-sH-LlZ" customClass="ChartsViewController" customModule="MasteringiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="adb-sH-LlZ" customClass="ChartsViewController" customModule="MasteringiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fLF-M8-wQP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,7 +427,7 @@
                                             </connections>
                                         </button>
                                         <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mJv-Fb-9bh">
-                                            <rect key="frame" x="8" y="475" width="359" height="3"/>
+                                            <rect key="frame" x="8" y="391" width="359" height="3"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="progressTintColor" name="Gotcha"/>
                                             <color key="trackTintColor" red="0.1960784314" green="0.20392156859999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -448,16 +464,7 @@
             <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
             <color red="0.38699999451637268" green="0.72899997234344482" blue="0.38899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Meh">
             <color red="0.84700000286102295" green="0.27500000596046448" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
