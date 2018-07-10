@@ -16,6 +16,8 @@
 		CEBAC414208EA633005189CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC413208EA633005189CE /* Assets.xcassets */; };
 		CEBAC417208EA633005189CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC415208EA633005189CE /* LaunchScreen.storyboard */; };
 		CEBAC421208ED39A005189CE /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC420208ED39A005189CE /* ChartsViewController.swift */; };
+		CED69D5620F45DD6001E93CC /* LearningModuleSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D5520F45DD6001E93CC /* LearningModuleSelectorViewController.swift */; };
+		CED69D5820F47E54001E93CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D5720F47E54001E93CC /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CEBAC416208EA633005189CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBAC418208EA633005189CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBAC420208ED39A005189CE /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		CED69D5520F45DD6001E93CC /* LearningModuleSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModuleSelectorViewController.swift; sourceTree = "<group>"; };
+		CED69D5720F47E54001E93CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				CEBAC413208EA633005189CE /* Assets.xcassets */,
 				CEBAC415208EA633005189CE /* LaunchScreen.storyboard */,
 				CEBAC418208EA633005189CE /* Info.plist */,
+				CED69D5520F45DD6001E93CC /* LearningModuleSelectorViewController.swift */,
+				CED69D5720F47E54001E93CC /* HomeViewController.swift */,
 			);
 			path = MasteringiOS;
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 				CEBAC421208ED39A005189CE /* ChartsViewController.swift in Sources */,
 				CE677FC92092B2FB001DFC41 /* UIButtonAnimations.swift in Sources */,
 				CEBAC40F208EA631005189CE /* ViewController.swift in Sources */,
+				CED69D5620F45DD6001E93CC /* LearningModuleSelectorViewController.swift in Sources */,
 				CEBAC40D208EA631005189CE /* AppDelegate.swift in Sources */,
+				CED69D5820F47E54001E93CC /* HomeViewController.swift in Sources */,
 				CE677FC720929C96001DFC41 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

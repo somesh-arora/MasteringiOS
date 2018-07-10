@@ -25,7 +25,7 @@ class ChartsViewController: UIViewController
         super.viewDidLoad()
         
         PieChart.chartDescription?.textColor = UIColor(white: 1, alpha: 1)
-        rightAnswer.value = 2
+        rightAnswer.value = 7
         rightAnswer.label = "Correct"
         
         wrongAnswer.value = 3

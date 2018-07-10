@@ -11,13 +11,13 @@ import UIKit
 class QuizViewController: UIViewController
 {
     @IBOutlet weak var questionTextField: UITextView!
-    @IBOutlet weak var progressTextField: UILabel!
     @IBOutlet weak var option1Button: UIButton!
     @IBOutlet weak var option2Button: UIButton!
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
-   
+    @IBOutlet weak var progressView: UIProgressView!
+    
     var questions = [
                      "What is the meaning of iOS?",
                      "Which file specifies the layout of your screen?",
@@ -30,6 +30,7 @@ class QuizViewController: UIViewController
                      "Which of the following framework is not used in iOS?",
                      "Which of the following is a default UI property?"
                     ]
+    
     
     let answers = [
                     ["iPhone Operating System","Internetwork Operating System", "Internet Operating System"],
@@ -53,12 +54,16 @@ class QuizViewController: UIViewController
 
     override func viewDidLoad()
     {
+        progressView.setProgress(0.1, animated: false)
         super.viewDidLoad()
-//        questionDict["module1"] = questions
-//        answersDict["module1"] = answers
-//        let a = questionDict["module1"]
-//        let b = answersDict["module1"]
-//        print(b![1])
+        questionDict["module1"] = questions
+        print(questionDict.keys)
+        
+        answersDict["module1"] = answers
+        let a = questionDict["module1"]
+        let b = answersDict["module1"]
+        print(b![0])
+        print(a![0])
        
         
         nextButton.isHidden = true
@@ -72,11 +77,14 @@ class QuizViewController: UIViewController
     
     func newQuestion()
     {
+        
+        progressView.setProgress(Float(currentQuestion+1) / Float(questions.count), animated: true)
         if(currentQuestion+1 == questions.count)
         {
             nextButton.setTitle("Finish", for: .normal)
+            
         }
-        progressTextField.text = "Question: " + String(currentQuestion+1) + " / " + String(questions.count)
+        
         option1Button.isEnabled = true
         option2Button.isEnabled = true
         option3Button.isEnabled = true
