@@ -46,7 +46,7 @@ class ViewController: UIViewController
             
             "MVC is a design pattern that stands for model view controller, this design pattern separates the data from its display, mediated by a View Controller.",
             
-            "Core Data is not an ORM or object-relational mapper. Nor is it a database. Instead, Core Data is an object graph manager which also has the ability to persist object graphs to a persistent store, on a disk.",
+            "Core Data is not an ORM or object-relational mapper. Nor is it a database. Instead, Core Data is an object graph manager which also has the ability to persist object graphs to a persistent store, on a disk. It is a framework that allows to persist data without actually using a database. This framework is similar to using a relational databases from SQLite.",
             
             "Reusability of an already allocated object.",
             
@@ -133,6 +133,47 @@ class ViewController: UIViewController
         "Stack is used and automatically removes itself from memory after work is finished. But in Heap the user could do it by writing manual code for deleting from memory. Stack; Stack is easy to use. It’s kept in RAM on the computer. Created variables are automatically deleted when they exit the stack. It is quite fast compared to Heap. Constructed variables can be used without a pointer. Heap; Compared to Stack, it is quite slow. It creates memory problems if not used correctly. Variables are used with pointers. It is created at runtime.",
         
         "UIBezierPath class allows us define custom paths that describe any shape, and use those paths to achieve any custom result we want."
+    ]
+    
+    let question4 =
+    [
+        "assign property",
+        "reatain property",
+        "copy property",
+        "Explain what is the protocol in Objective C?",
+        "Explain class definition in Objective-C?",
+        "Mention what is the use of category in Objective-C?",
+        "Explain NSArray",
+        "Explain NSMutableArray",
+        "Explain what is @synthesized in Objective-C?",
+        "Explain what are objective- C blocks?"
+    ]
+    
+    let answer4 =
+    [
+        "the incoming value will be assigned to the property. Use this for plain datatypes (e.g. int, double).",
+        "the incoming value will be retained. If the value is an Objective-C object this is the most common.",
+        "the incoming value will be copied. This is used if there is a chance that the incoming object may change (e.g. NSMutableString).",
+        "In Objetive-C, a protocol is a language feature, that provides multiple inheritances in a single inheritance language.  Objective C supports two types of protocol. Ad hoc protocols known as informal protocol and Compiler protocols known as a formal protocol",
+        "A class definition begins with the keyword @interface followed by the interface (class) name, and the class body, closed by a pair of curly braces.  In Objective-C, all classed are retrieved from the base class called NSObject. It gives basic methods like memory allocation and initialization.",
+        "The use of category in Objective-C is to extend an existing class by appending behavior that is useful only in certain situations. In order to add such extension to existing classes, objective –C provides extensions and categories. The syntax used to define a category is @interface keyword.",
+        "NSArray: You will use an NS array when data in the array don’t change. For example, the company name you will put in NS Array so that no one can manipulate it.",
+        "NSMutableArray: This array will be used in an array, when data in an array will change. For instance, if you are passing an array to function and that function will append some elements in that array then you will choose NSMutable Array.",
+        "Once you have declared the property in objective-C, you have to tell the compiler instantly by using synthesize directive.  This will tell the compiler to generate a getter&setter message.",
+        "In Objective-C class, there is an object that combines data with related behavior.  It enables you to form distinct segments of code that can be passed around to functions or methods as if they were values.  Objective-C blocks can be added to collections like NSDictionary or NSArray."
+    ]
+    
+    let question5 =
+    [
+        "What is NSUserDefaults?",
+        "what is Singleton Pattern?"
+    ]
+    
+    let answer5 =
+        [
+    "It is the easiest way to store data without a database using key-value pair. This approach is the ideal way to store small amounts of data. In most cases, NSUserDefaults is best used to save user’s settings and data that is not critical. The following types are supported by NSUserDefaults: NSString, NSNumber, NSDate, NSDictionary, NSData",
+    "The singleton pattern guarantees that only one instance of a class is instantiated. ",
+    ""
     ]
     
     
@@ -229,6 +270,11 @@ class ViewController: UIViewController
         {
             questionTextField.text = question3[currentQuestion-1]
             answerTextField.text = answer3[currentQuestion-1]
+        }
+        else if(passedQuestionModule == "question4")
+        {
+            questionTextField.text = question4[currentQuestion-1]
+            answerTextField.text = answer4[currentQuestion-1]
         }
         
     }

@@ -212,7 +212,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <state key="normal" title="Module 1">
+                                            <state key="normal" title="General">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -227,7 +227,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <state key="normal" title="Module 2">
+                                            <state key="normal" title="General">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -252,7 +252,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <state key="normal" title="Module 3">
+                                            <state key="normal" title="General">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -267,7 +267,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" name="Gotcha"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <state key="normal" title="Module 4">
+                                            <state key="normal" title="Objective-C">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -275,6 +275,36 @@
                                             </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="module4:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="NWA-ov-sxD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHS-w7-IW8">
+                                            <rect key="frame" x="5" y="508" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <state key="normal" title="Design Patterns">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="module4:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="EeN-Il-Rx5"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-gj-G1S">
+                                            <rect key="frame" x="190" y="508" width="177" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="Gotcha"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <state key="normal" title="Memory Management">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="module4:" destination="PIy-v6-ZYN" eventType="touchUpInside" id="ODg-7j-mgh"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -289,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6S-0j-WaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3330" y="132"/>
+            <point key="canvasLocation" x="3328.8000000000002" y="131.52709359605913"/>
         </scene>
         <!--Charts View Controller-->
         <scene sceneID="wff-qE-uKd">
@@ -464,7 +494,7 @@
             <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Gotcha">
-            <color red="0.38699999451637268" green="0.72899997234344482" blue="0.38899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Meh">
             <color red="0.84700000286102295" green="0.27500000596046448" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
