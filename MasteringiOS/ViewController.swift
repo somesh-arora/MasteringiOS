@@ -13,15 +13,12 @@ class ViewController: UIViewController
     
     @IBOutlet weak var questionTextField: UITextView!
     @IBOutlet weak var answerTextField: UITextView!
-    @IBOutlet weak var mehButton: UIButton!
     @IBOutlet weak var gotchaButton: UIButton!
-    @IBOutlet weak var questionTracker: UILabel!
     
     @IBOutlet weak var progressView: UIProgressView!
     
     var passedQuestionModule = ""
-    var passedAnswerModule = ""
-    var passedCount = ""
+    var questionCount = 1
     var currentQuestion = 1
     
     let question1 =
@@ -244,7 +241,7 @@ class ViewController: UIViewController
     
     
     
-    let SwiftQuestion =
+    let swiftQuestion =
         [
             "What is the difference between public and open? Why is it important to have both?",
             "What is the difference between var and let?",
@@ -252,7 +249,7 @@ class ViewController: UIViewController
             "What is the difference between implicit and explicit?"
     ]
     
-    let SwiftAnswer =
+    let swiftAnswer =
         [
     "Open access imposes limitations on class inheritance. Classes declared with open level access can be subclassed by modules they are defined in, modules that import the module in which the class is defined, and class members as well. While this sounds similar to the public access level defined in Swift 2, there is a small difference. In Swift 3, the meaning of public access level means that classes declared public can only be subclassed in the module they are defined in. This includes public class members which can be overridden by subclasses defined int he module they are defined in. Some classes of libraries and frameworks are not designed to be subclasses. For example, in the Core Data framework, Apple states that some methods of NSManagedObject should not be overridden. To prevent any unexpected behavior that may result from overriding those methods, Apple declares those methods public rather than open. As a result, those methods are not marked as open for developers to override.",
     
@@ -317,7 +314,7 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         progressView.setProgress(0.1, animated: false)
-        print(passedQuestionModule, passedAnswerModule)
+        
         questionTextField.textColor = UIColor.white
 //        showAnswer.isHidden = false
 //        answerTextField.alpha = 0.03
@@ -338,11 +335,11 @@ class ViewController: UIViewController
 //        answerTextField.alpha = 0.03
         
         currentQuestion = currentQuestion + 1
-        progressView.setProgress(Float(currentQuestion) / Float(question1.count), animated: true)
-        if(currentQuestion <= question1.count)
+        progressView.setProgress(Float(currentQuestion) / Float(questionCount), animated: true)
+        if(currentQuestion <= questionCount)
         {
             print("Current index", currentQuestion)
-            print("Questions Count", question1.count)
+            print("Questions Count", questionCount)
            // questionTracker.text = "Question: " + String(currentQuestion) + "/" + String(question1.count)
             
             nextQuestion()
@@ -351,37 +348,9 @@ class ViewController: UIViewController
         {
             progressView.setProgress(0.1, animated: false)
             print("Current index", currentQuestion)
-            print("Questions Count", question1.count)
+            print("Questions Count", questionCount)
             currentQuestion = 1
          //   questionTracker.text = "Question: " + String(currentQuestion) + "/" + String(question1.count)
-            nextQuestion()
-        }
-        
-    }
-    
-    @IBAction func mehButton(_ sender: UIButton)
-    {
-//        showAnswer.isHidden = false
-//        answerTextField.alpha = 0.03
-        
-        currentQuestion = currentQuestion + 1
-        progressView.setProgress(Float(currentQuestion) / Float(question1.count), animated: true)
-        if(currentQuestion <= question1.count)
-        {
-            print("Current index", currentQuestion)
-            print("Questions Count", question1.count)
-            print("Hello from if")
-         //   questionTracker.text = "Question: " + String(currentQuestion) + "/" + String(question1.count)
-            nextQuestion()
-        }
-        else
-        {
-             progressView.setProgress(0.1, animated: false)
-            print("Current index", currentQuestion)
-            print("Questions Count", question1.count)
-            print("Hello from else")
-            currentQuestion = 1
-          //  questionTracker.text = "Question: " + String(currentQuestion) + "/" + String(question1.count)
             nextQuestion()
         }
         
@@ -394,22 +363,69 @@ class ViewController: UIViewController
         {
             questionTextField.text = question1[currentQuestion-1]
             answerTextField.text = answer1[currentQuestion-1]
+            questionCount = question1.count
         }
         else if(passedQuestionModule == "question2")
         {
             questionTextField.text = question2[currentQuestion-1]
             answerTextField.text = answer2[currentQuestion-1]
+            questionCount = question2.count
         }
         else if(passedQuestionModule == "question3")
         {
             questionTextField.text = question3[currentQuestion-1]
             answerTextField.text = answer3[currentQuestion-1]
+            questionCount = question3.count
         }
         else if(passedQuestionModule == "question4")
         {
             questionTextField.text = question4[currentQuestion-1]
             answerTextField.text = answer4[currentQuestion-1]
+            questionCount = question4.count
         }
+        
+        else if(passedQuestionModule == "storyboardQuestion")
+        {
+            questionTextField.text = storyboardQuestion[currentQuestion-1]
+            answerTextField.text = storyboardAnswer[currentQuestion-1]
+            questionCount = storyboardQuestion.count
+        }
+        
+        else if(passedQuestionModule == "testingQuestion")
+        {
+            questionTextField.text = testingQuestion[currentQuestion-1]
+            answerTextField.text = testingAnswer[currentQuestion-1]
+            questionCount = testingQuestion.count
+        }
+        
+        else if(passedQuestionModule == "threadManagementQuestion")
+        {
+            questionTextField.text = threadManagementQuestion[currentQuestion-1]
+            answerTextField.text = threadManagementAnswer[currentQuestion-1]
+            questionCount = threadManagementQuestion.count
+        }
+        
+        else if(passedQuestionModule == "swiftQuestion")
+        {
+            questionTextField.text = swiftQuestion[currentQuestion-1]
+            answerTextField.text = swiftAnswer[currentQuestion-1]
+            questionCount = swiftQuestion.count
+        }
+        
+        else if(passedQuestionModule == "memoryManagementQuestion")
+        {
+            questionTextField.text = memoryManagementQuestion[currentQuestion-1]
+            answerTextField.text = memoryManagementQuestion[currentQuestion-1]
+            questionCount = memoryManagementQuestion.count
+        }
+        
+        else if(passedQuestionModule == "designPatternQuestion")
+        {
+            questionTextField.text = designPatternQuestion[currentQuestion-1]
+            answerTextField.text = designPatternAnswer[currentQuestion-1]
+            questionCount = designPatternQuestion.count
+        }
+        
         
     }
     
