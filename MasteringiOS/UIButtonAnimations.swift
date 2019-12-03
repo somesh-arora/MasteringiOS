@@ -6,13 +6,10 @@
 //  Copyright © 2018 Somesh Arora. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-extension UIButton
-{
-    func pulseButton()
-    {
+extension UIButton {
+    func pulseButton() {
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.2
         pulse.fromValue = 0.95
@@ -24,8 +21,7 @@ extension UIButton
         layer.add(pulse, forKey: nil)
     }
     
-    func shakeButton()
-    {
+    func shakeButton() {
         let shake = CABasicAnimation(keyPath: "position")
         shake.duration = 0.2
         shake.repeatCount = 2
@@ -41,6 +37,5 @@ extension UIButton
         shake.toValue = toValue
         
         layer.add(shake, forKey: nil)
-        
     }
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vAf-rx-i7C">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vAf-rx-i7C">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,10 +20,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRg-rs-O9d">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRg-rs-O9d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="z6S-Gj-mx8">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z6S-Gj-mx8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -41,20 +38,37 @@
                                             <rect key="frame" x="152" y="381" width="70" height="70"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mastering iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-bK-uWd">
-                                            <rect key="frame" x="33" y="150" width="308" height="91"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastering iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-bK-uWd">
+                                            <rect key="frame" x="24" y="100" width="327" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="gch-fn-NXI"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="BVY-bK-uWd" secondAttribute="trailing" constant="24" id="3LM-US-f6W"/>
+                                        <constraint firstItem="BVY-bK-uWd" firstAttribute="top" secondItem="z6S-Gj-mx8" secondAttribute="top" constant="100" id="LUL-Wq-KmT"/>
+                                        <constraint firstItem="BVY-bK-uWd" firstAttribute="leading" secondItem="z6S-Gj-mx8" secondAttribute="leading" constant="24" id="ilj-hF-0lT"/>
+                                    </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="top" secondItem="5Q3-tO-zAz" secondAttribute="top" id="1XH-JT-zZ8"/>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="trailing" secondItem="67M-oT-Kyh" secondAttribute="trailing" id="3Pw-bo-Jgs"/>
+                            <constraint firstAttribute="bottom" secondItem="zRg-rs-O9d" secondAttribute="bottom" id="5A1-Uk-wvR"/>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="top" secondItem="5Q3-tO-zAz" secondAttribute="top" id="8oS-W6-JWa"/>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="trailing" secondItem="67M-oT-Kyh" secondAttribute="trailing" id="PEU-gS-7WQ"/>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="leading" secondItem="67M-oT-Kyh" secondAttribute="leading" id="Yrp-eW-ieJ"/>
+                            <constraint firstItem="zRg-rs-O9d" firstAttribute="leading" secondItem="67M-oT-Kyh" secondAttribute="leading" id="mJd-FU-gjY"/>
+                            <constraint firstAttribute="bottom" secondItem="zRg-rs-O9d" secondAttribute="bottom" id="vNR-QN-z7O"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="67M-oT-Kyh"/>
                     </view>
                 </viewController>

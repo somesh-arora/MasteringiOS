@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tf1-tI-5Y2">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tf1-tI-5Y2">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,10 +21,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-Yz-4zk">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-Yz-4zk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="dMR-aZ-gR1">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dMR-aZ-gR1">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -90,6 +87,12 @@
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3xM-Yz-4zk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DLl-kH-P2L"/>
+                            <constraint firstItem="3xM-Yz-4zk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XX0-to-Y0j"/>
+                            <constraint firstItem="3xM-Yz-4zk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aS0-E5-aHy"/>
+                            <constraint firstAttribute="bottom" secondItem="3xM-Yz-4zk" secondAttribute="bottom" id="afa-zV-CLV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -108,16 +111,16 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="tf1-tI-5Y2" customClass="HomeViewController" customModule="MasteringiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csk-Ac-WoQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountain" translatesAutoresizingMaskIntoConstraints="NO" id="xS8-rl-1Ia">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758.00000000000023"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfm-tE-xGe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cfU-Wk-hhZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-1M-bC8">
@@ -203,10 +206,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FC5-7E-txs">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FC5-7E-txs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="RyI-6K-GzS">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RyI-6K-GzS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -250,6 +252,12 @@
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FC5-7E-txs" firstAttribute="top" secondItem="fLF-M8-wQP" secondAttribute="top" id="Cf4-XE-DMz"/>
+                            <constraint firstItem="FC5-7E-txs" firstAttribute="leading" secondItem="y39-uR-AAQ" secondAttribute="leading" id="VrH-cm-p7o"/>
+                            <constraint firstItem="FC5-7E-txs" firstAttribute="trailing" secondItem="y39-uR-AAQ" secondAttribute="trailing" id="dEH-cL-WJw"/>
+                            <constraint firstAttribute="bottom" secondItem="FC5-7E-txs" secondAttribute="bottom" id="yLp-mS-GDE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y39-uR-AAQ"/>
                     </view>
                     <connections>
@@ -265,17 +273,17 @@
             <objects>
                 <viewController storyboardIdentifier="LearningModuleSelectorViewController" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3qi-hW-9bk" customClass="LearningModuleSelectorViewController" customModule="MasteringiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V5D-Em-ryU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1096"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-gP-TZ6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1096"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-7d-ETL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountain" translatesAutoresizingMaskIntoConstraints="NO" id="qX0-UA-VHQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1150.0000000000002"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zs0-4w-er5">
@@ -284,9 +292,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-YL-wGi">
+                                                        <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-YL-wGi">
                                                             <rect key="frame" x="0.0" y="40" width="375" height="44"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                             <color key="barTintColor" red="0.28235294119999998" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <items>
                                                                 <navigationItem title="Modules" leftItemsSupplementBackButton="YES" id="qzY-ka-egs">
@@ -300,10 +307,13 @@
                                                                 </navigationItem>
                                                             </items>
                                                         </navigationBar>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzK-VJ-2AV">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzK-VJ-2AV">
                                                             <rect key="frame" x="5" y="693" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="liA-mj-Bs5"/>
+                                                                <constraint firstAttribute="height" constant="180" id="pPq-Dm-kWj"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Swift">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,10 +325,13 @@
                                                                 <action selector="swiftModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="6Hx-iT-LP5"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C71-u3-toJ">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C71-u3-toJ">
                                                             <rect key="frame" x="190" y="693" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="Nr3-9V-QlJ"/>
+                                                                <constraint firstAttribute="height" constant="180" id="Zx2-DM-xxY"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Thread Management">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -330,10 +343,13 @@
                                                                 <action selector="threadManagementModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="8Ev-b9-JB4"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTM-zo-Jy7">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTM-zo-Jy7">
                                                             <rect key="frame" x="5" y="138" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="Rc1-hz-A71"/>
+                                                                <constraint firstAttribute="height" constant="180" id="iLb-X9-5ad"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="General">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,10 +361,13 @@
                                                                 <action selector="module1:" destination="3qi-hW-9bk" eventType="touchUpInside" id="3vS-uT-1SF"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-Z1-4sx">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-Z1-4sx">
                                                             <rect key="frame" x="190" y="138" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="YUv-aK-MdF"/>
+                                                                <constraint firstAttribute="width" constant="180" id="d0T-hI-Nq6"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="General">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -360,10 +379,13 @@
                                                                 <action selector="module2:" destination="3qi-hW-9bk" eventType="touchUpInside" id="ci3-6E-y2v"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2v-Vk-upg">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2v-Vk-upg">
                                                             <rect key="frame" x="190" y="323" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="5LX-NW-A9V"/>
+                                                                <constraint firstAttribute="width" constant="180" id="khQ-9N-VHc"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Objective-C">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -375,10 +397,13 @@
                                                                 <action selector="module4:" destination="3qi-hW-9bk" eventType="touchUpInside" id="Jdv-Ba-wig"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-I4-Deg">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-I4-Deg">
                                                             <rect key="frame" x="5" y="508" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="9dK-lq-0aO"/>
+                                                                <constraint firstAttribute="width" constant="180" id="msN-6R-GPN"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Design Patterns">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -390,10 +415,13 @@
                                                                 <action selector="designPatternModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="l71-lD-K84"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RJx-v2-6Tt">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RJx-v2-6Tt">
                                                             <rect key="frame" x="190" y="508" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="AdG-Of-c1a"/>
+                                                                <constraint firstAttribute="width" constant="180" id="T0c-1P-vZh"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Memory Management">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -405,10 +433,13 @@
                                                                 <action selector="memoryManagementModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="biC-rX-riT"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-JR-qZH">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-JR-qZH">
                                                             <rect key="frame" x="5" y="878" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="WWb-g3-ZkU"/>
+                                                                <constraint firstAttribute="height" constant="180" id="u3Z-ti-3Lt"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="Unit / UI Testing">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -420,10 +451,13 @@
                                                                 <action selector="testingModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="vPi-NA-EZG"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="29Q-4g-Hv4">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="29Q-4g-Hv4">
                                                             <rect key="frame" x="190" y="878" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="180" id="4MG-zi-lgo"/>
+                                                                <constraint firstAttribute="width" constant="180" id="un1-Py-7k7"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="View / Storyboard">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -435,10 +469,13 @@
                                                                 <action selector="storyboardModule:" destination="3qi-hW-9bk" eventType="touchUpInside" id="nMs-TH-PbM"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrR-wg-JO8">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrR-wg-JO8">
                                                             <rect key="frame" x="5" y="323" width="180" height="180"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Gotcha"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="Pnu-Jw-SYp"/>
+                                                                <constraint firstAttribute="height" constant="180" id="cOS-RV-QIP"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <state key="normal" title="General">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -451,6 +488,32 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ZTM-zo-Jy7" firstAttribute="top" secondItem="SN1-YL-wGi" secondAttribute="bottom" constant="54" id="7Ht-dg-avh"/>
+                                                        <constraint firstItem="UzK-VJ-2AV" firstAttribute="top" secondItem="mfh-I4-Deg" secondAttribute="bottom" constant="5" id="8dY-Pm-yz1"/>
+                                                        <constraint firstItem="UrR-wg-JO8" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" constant="5" id="8f5-uV-d2e"/>
+                                                        <constraint firstItem="SN1-YL-wGi" firstAttribute="top" secondItem="GWf-zX-PAF" secondAttribute="top" constant="40" id="A3a-ey-hJf"/>
+                                                        <constraint firstItem="Wc9-JR-qZH" firstAttribute="baseline" secondItem="29Q-4g-Hv4" secondAttribute="baseline" id="K5X-X1-m9I"/>
+                                                        <constraint firstItem="GMM-Z1-4sx" firstAttribute="top" secondItem="SN1-YL-wGi" secondAttribute="bottom" constant="54" id="LSk-61-IH5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RJx-v2-6Tt" secondAttribute="trailing" constant="5" id="OdT-AB-Llr"/>
+                                                        <constraint firstItem="mfh-I4-Deg" firstAttribute="top" secondItem="RJx-v2-6Tt" secondAttribute="top" id="QJ1-Js-Z0O"/>
+                                                        <constraint firstItem="Wc9-JR-qZH" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" constant="5" id="QSa-Io-UtR"/>
+                                                        <constraint firstItem="UrR-wg-JO8" firstAttribute="baseline" secondItem="Y2v-Vk-upg" secondAttribute="baseline" id="QwQ-gv-SVg"/>
+                                                        <constraint firstItem="mfh-I4-Deg" firstAttribute="top" secondItem="UrR-wg-JO8" secondAttribute="bottom" constant="5" id="VF0-ci-y6j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="29Q-4g-Hv4" secondAttribute="trailing" constant="5" id="XqZ-D4-9ye"/>
+                                                        <constraint firstItem="Wc9-JR-qZH" firstAttribute="top" secondItem="UzK-VJ-2AV" secondAttribute="bottom" constant="5" id="aHu-Ju-ax6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GMM-Z1-4sx" secondAttribute="trailing" constant="5" id="ag6-hf-xHS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="C71-u3-toJ" secondAttribute="trailing" constant="5" id="bp6-RX-rhY"/>
+                                                        <constraint firstItem="UzK-VJ-2AV" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" constant="5" id="eEY-vV-OYe"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Y2v-Vk-upg" secondAttribute="trailing" constant="5" id="hbP-3X-gWB"/>
+                                                        <constraint firstItem="SN1-YL-wGi" firstAttribute="centerX" secondItem="GWf-zX-PAF" secondAttribute="centerX" id="mqJ-jC-BH9"/>
+                                                        <constraint firstItem="ZTM-zo-Jy7" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" constant="5" id="pXr-Ne-0mD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Wc9-JR-qZH" secondAttribute="bottom" constant="92" id="qbQ-r3-HJb"/>
+                                                        <constraint firstItem="UrR-wg-JO8" firstAttribute="top" secondItem="ZTM-zo-Jy7" secondAttribute="bottom" constant="5" id="sv4-39-LEk"/>
+                                                        <constraint firstItem="UzK-VJ-2AV" firstAttribute="top" secondItem="C71-u3-toJ" secondAttribute="top" id="tKe-Ns-c8T"/>
+                                                        <constraint firstItem="mfh-I4-Deg" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" constant="5" id="xiq-3u-Uzn"/>
+                                                        <constraint firstItem="SN1-YL-wGi" firstAttribute="leading" secondItem="GWf-zX-PAF" secondAttribute="leading" id="xoF-VY-uPw"/>
+                                                    </constraints>
                                                 </view>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
@@ -460,11 +523,11 @@
                                             <constraint firstItem="zs0-4w-er5" firstAttribute="leading" secondItem="bcF-7d-ETL" secondAttribute="leading" id="6iB-4W-Zze"/>
                                             <constraint firstAttribute="trailing" secondItem="zs0-4w-er5" secondAttribute="trailing" id="9gU-n5-PFu"/>
                                             <constraint firstAttribute="trailing" secondItem="qX0-UA-VHQ" secondAttribute="trailing" id="Az6-mt-iJ8"/>
-                                            <constraint firstAttribute="bottom" secondItem="zs0-4w-er5" secondAttribute="bottom" id="Bb4-tw-3TZ"/>
                                             <constraint firstItem="qX0-UA-VHQ" firstAttribute="top" secondItem="bcF-7d-ETL" secondAttribute="top" id="Z8s-kX-dO5"/>
                                             <constraint firstItem="qX0-UA-VHQ" firstAttribute="leading" secondItem="bcF-7d-ETL" secondAttribute="leading" id="abg-gI-eQT"/>
                                             <constraint firstAttribute="bottom" secondItem="qX0-UA-VHQ" secondAttribute="bottom" id="oOb-y5-KEn"/>
                                             <constraint firstItem="zs0-4w-er5" firstAttribute="top" secondItem="bcF-7d-ETL" secondAttribute="top" id="wKo-AB-bPI"/>
+                                            <constraint firstAttribute="bottom" secondItem="zs0-4w-er5" secondAttribute="bottom" id="wfj-Gq-Eup"/>
                                             <constraint firstAttribute="height" constant="1150" id="yby-tR-rzY"/>
                                         </constraints>
                                     </view>
@@ -500,18 +563,17 @@
             <objects>
                 <viewController storyboardIdentifier="QuizViewController" id="cNA-n3-aJy" customClass="QuizViewController" customModule="MasteringiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dFI-Gh-Ikv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mountain" translatesAutoresizingMaskIntoConstraints="NO" id="G1V-I6-k3y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-SW-S3S">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="REp-TK-e11">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-SW-S3S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="REp-TK-e11">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" editable="NO" text="Question" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="29X-0A-LNa">
@@ -522,10 +584,12 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZZ-cu-NRp">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZZ-cu-NRp">
                                             <rect key="frame" x="16" y="518" width="343" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="g0Y-cs-rMc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -537,10 +601,12 @@
                                                 <action selector="optionButtons:" destination="cNA-n3-aJy" eventType="touchUpInside" id="5Xb-Ru-Ngk"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svN-xc-2FZ">
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svN-xc-2FZ">
                                             <rect key="frame" x="16" y="578" width="343" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="N3v-DH-AXc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -552,10 +618,12 @@
                                                 <action selector="optionButtons:" destination="cNA-n3-aJy" eventType="touchUpInside" id="4rV-ds-avj"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmC-67-QvO">
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmC-67-QvO">
                                             <rect key="frame" x="16" y="638" width="343" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="r4g-zY-J9G"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,10 +635,12 @@
                                                 <action selector="optionButtons:" destination="cNA-n3-aJy" eventType="touchUpInside" id="icO-Gq-3Lz"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-tB-tEA">
-                                            <rect key="frame" x="16" y="722" width="343" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-tB-tEA">
+                                            <rect key="frame" x="16" y="698" width="343" height="40"/>
                                             <color key="backgroundColor" name="Quiz"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="gkT-6T-uTd"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="Next">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -604,12 +674,32 @@
                                             </items>
                                         </navigationBar>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="nZZ-cu-NRp" secondAttribute="trailing" constant="16" id="3E2-Dr-8cT"/>
+                                        <constraint firstAttribute="bottom" secondItem="T9M-tB-tEA" secondAttribute="bottom" constant="20" id="9h9-Xt-cg3"/>
+                                        <constraint firstItem="T9M-tB-tEA" firstAttribute="top" secondItem="hmC-67-QvO" secondAttribute="bottom" constant="20" id="Eyl-7b-X18"/>
+                                        <constraint firstAttribute="trailing" secondItem="T9M-tB-tEA" secondAttribute="trailing" constant="16" id="Ii6-oh-uuE"/>
+                                        <constraint firstItem="hmC-67-QvO" firstAttribute="leading" secondItem="REp-TK-e11" secondAttribute="leading" constant="16" id="Ki9-Ge-1GQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="hmC-67-QvO" secondAttribute="trailing" constant="16" id="QLP-cZ-YGd"/>
+                                        <constraint firstItem="nZZ-cu-NRp" firstAttribute="leading" secondItem="REp-TK-e11" secondAttribute="leading" constant="16" id="ilX-ev-UCv"/>
+                                        <constraint firstItem="svN-xc-2FZ" firstAttribute="top" secondItem="nZZ-cu-NRp" secondAttribute="bottom" constant="20" id="j2n-ad-2Dj"/>
+                                        <constraint firstItem="T9M-tB-tEA" firstAttribute="leading" secondItem="REp-TK-e11" secondAttribute="leading" constant="16" id="mKX-UZ-8tx"/>
+                                        <constraint firstAttribute="trailing" secondItem="svN-xc-2FZ" secondAttribute="trailing" constant="16" id="nGr-gO-ZBC"/>
+                                        <constraint firstItem="svN-xc-2FZ" firstAttribute="leading" secondItem="REp-TK-e11" secondAttribute="leading" constant="16" id="qSj-4A-dq8"/>
+                                        <constraint firstItem="hmC-67-QvO" firstAttribute="top" secondItem="svN-xc-2FZ" secondAttribute="bottom" constant="20" id="qjT-5c-ohZ"/>
+                                    </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4eR-SW-S3S" secondAttribute="bottom" id="K2Z-w3-ldb"/>
+                            <constraint firstItem="4eR-SW-S3S" firstAttribute="leading" secondItem="jgC-nB-HGJ" secondAttribute="leading" id="K34-rd-Md2"/>
+                            <constraint firstItem="4eR-SW-S3S" firstAttribute="trailing" secondItem="jgC-nB-HGJ" secondAttribute="trailing" id="Uxv-EL-09O"/>
+                            <constraint firstItem="4eR-SW-S3S" firstAttribute="top" secondItem="jgC-nB-HGJ" secondAttribute="top" id="VFk-x3-2ky"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jgC-nB-HGJ"/>
                     </view>
                     <connections>
@@ -629,31 +719,7 @@
     <resources>
         <image name="Mountain" width="1280" height="853"/>
         <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
             <color red="0.38699999451637268" green="0.72899997234344482" blue="0.38899999856948853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Gotcha">
-            <color red="0.3869999945" green="0.72899997230000002" blue="0.38899999860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Quiz">
-            <color red="0.88999998569488525" green="0.39800000190734863" blue="0.17200000584125519" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Quiz">
             <color red="0.88999998569488525" green="0.39800000190734863" blue="0.17200000584125519" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

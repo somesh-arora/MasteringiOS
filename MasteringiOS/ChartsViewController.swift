@@ -9,23 +9,21 @@
 import UIKit
 import Charts
 
-
-
-class ChartsViewController: UIViewController
-{
-
-    @IBOutlet weak var PieChart: PieChartView!
+class ChartsViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    @IBOutlet weak var PieChart: PieChartView!
     var passedRightAnswerValue = 0
     var passedWrongAnswervalue = 0
     var rightAnswer = PieChartDataEntry(value: 0)
     var wrongAnswer = PieChartDataEntry(value: 0)
-    
     var totalEntries = [PieChartDataEntry]()
-    override func viewDidLoad()
-    {
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        print(passedRightAnswerValue, passedWrongAnswervalue)
         PieChart.chartDescription?.textColor = UIColor(white: 1, alpha: 1)
         rightAnswer.value = Double(passedRightAnswerValue)
         rightAnswer.label = "Correct"
@@ -40,11 +38,9 @@ class ChartsViewController: UIViewController
         
         totalEntries = [rightAnswer, wrongAnswer]
         updateChart()
-
     }
     
-    func updateChart()
-    {
+    func updateChart() {
         let charDataSet = PieChartDataSet(values: totalEntries, label: nil)
         let chartData = PieChartData(dataSet: charDataSet)
         
@@ -52,14 +48,8 @@ class ChartsViewController: UIViewController
         charDataSet.colors = colors as! [NSUIColor]
         PieChart.data = chartData
     }
-
-    override func didReceiveMemoryWarning()
-    {
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-    
-
-    
-
 }
